@@ -1,0 +1,125 @@
+.gallery-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+
+    .gallery-item {
+        text-align: center;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 1rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        .caption {
+            h4 {
+                color: #8b4513;
+                margin-top: 0.5rem;
+            }
+        }
+    }
+}
+
+.caption {
+    h4 {
+        color: #8b4513;
+        margin-top: 0.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+        margin: 0.5rem 0;
+    }
+}
+
+.stories {
+    padding: 2rem;
+    background-color: #fffbe6;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin: 2rem;
+}
+
+.events {
+    display: flex;
+    gap: 20px;
+    .event-item {
+        text-align: center;
+        flex: 45%;
+        margin-bottom: 1.5rem;
+
+        img {
+            width: 600px;
+            max-height: 600;
+            border-radius: 10px;
+        }
+        p {
+            color: #eb6b10;
+            font-size: 1.2rem;
+            margin-top: 1rem;
+        }
+    }
+    
+}
+
+.cta {
+    text-align: center;
+    margin: 2rem;
+
+    button {
+        background-color: #8b4513;
+        color: #fff;
+        padding: 0.8rem 1.5rem;
+        font-size: 1.2rem;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    button:hover {
+        background-color: #d2691e;
+    }
+    
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #8b4513;
+    color: #fff;
+
+    a {
+        color: var(--info_a);
+        text-decoration: none;
+    }
+    a:hover {
+        color: var(--info_a_hover);
+    }
+}
+
+@media screen and (max-width: 1238px) {
+    .events {
+        flex-direction: column;
+        .event-item {
+    
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
