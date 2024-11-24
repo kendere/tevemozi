@@ -34,13 +34,12 @@
         a:hover {
             background-color: #e4651c;
         }
-        
     }
 }
 
 @media screen and (max-width: 768px) {
     .main-container {
-       height: 60vh;
+       height: 65vh;
     }
     .main-overlay > a {
         display: block;
